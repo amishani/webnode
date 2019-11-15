@@ -1,13 +1,5 @@
-<!doctype html>
-{% load static %}
-<html>
-<head>
-<title>部落格</title>
-<meta charset="utf-8">
-<link rel="stylesheet" href="{% static 'main/css/main.css' %}">
-</head>
-<body>
-{% include 'main/menu.html' %}
-<h2>部落格說 -- Hello world!</h2> 
-</body>
-</html>
+{% extends 'main/base.html' %}
+{% block content %}
+<p><h1><center>理想的網站及網路商城</h1></p>
+<p>上百種的新潮樣式，絕對能符合您個人需求，為您設立個人網站，公司企業網站及網路商城的最佳選擇。</p>
+{% endblock %}

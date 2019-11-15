@@ -1,0 +1,14 @@
+<!doctype html>
+{% load static %}
+<html>
+<head>
+<title> 期末作業 </title>
+<meta charset="utf-8">
+<p> <img src="{% static 'main/img/webnode.png' %}"> </p>
+<link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+</head>
+<body>
+{% include 'main/menu.html' %}
+{% block content %}{% endblock %}
+</body>
+</html>

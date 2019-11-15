@@ -1,17 +1,6 @@
-<!doctype html>
-{% load static %}
-<html>
-<head>
-<title>部落格</title>
-<meta charset="utf-8">
-<link rel="stylesheet" href="{% static 'main/css/main.css' %}">
-</head>
-<body>
-<ul id="menu">
-  <li><a href="{% url 'main:main' %}">首頁</a></li>
-  <li><a href="{% url 'main:about' %}">個人網站</a></li>
-</ul>
-<h2>關於部落格</h2>
-<p>歡迎來到我的部落格，您可盡情瀏覽並留言。</p>
-</body>
-</html>
+{% extends 'main/base.html' %}
+{% block heading %}關於{% endblock %}
+{% block content %}
+<p><h1><center>免費又簡單的網站設立工具</h1></p>
+<p>一個快速且容易的網站架設工具，在網路上設計網站十分的簡單又免費。此外，您也可以使用自己的網域名稱。</p>
+{% endblock %}
